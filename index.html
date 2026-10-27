@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffe4ef">
+  <title>Happy Birthday Meri Bett(u) 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="pink-sparkles" id="sparkles" aria-hidden="true"></div>
+  <div class="balloon-rain" id="balloonRain" aria-hidden="true"></div>
+
+  <main>
+    <!-- STAGE 1: POP-UP STYLE GREETING -->
+    <section class="stage active" id="stage1">
+      <div class="first-greeting">
+        <p class="greeting-title">
+          HAPPY BIRTHDAY<br>
+          <span>MERI BETTU</span>
+          <span class="end-heart">❤️</span>
+        </p>
+        <p class="tiny-love">a little world made just for you</p>
+        <button class="button button-pink italic-bold" id="openLetter">
+          Kuch kehna hai
+        </button>
+      </div>
+    </section>
+
+    <!-- STAGE 2: RED LETTER WITH YELLOW RIBBON -->
+    <section class="stage" id="stage2">
+      <div class="letter-wrap">
+        <div class="letter-ribbon" aria-hidden="true">
+          <span>♡</span>
+        </div>
+
+        <article class="letter">
+          <div class="letter-top">FOR MY BETTU 💌</div>
+          <h1>Ek chhoti si baat…</h1>
+
+          <div
+            class="letter-message"
+            contenteditable="true"
+            role="textbox"
+            aria-label="Write your personal birthday letter here"
+            spellcheck="true"
+          >
+            Meri pyaari si bettu, aaj ka din sirf apke liye hai. Aap meri zindagi ka sabse khoobsurat hissa ho, aur main hamesha aapke saath rehna chahta hoon. Aapki muskaan meri duniya ko roshan karti hai, aur aapki khushi meri sabse badi dua hai. Aaj ke din, main aapko sirf pyaar aur khushiyan dena chahta hoon. Bettu ap bss kabhi hame chodke mat jaiyega or bss kuch samay or phir hamlog sabko maana lenge bss mera hath hamesa thame rkhiyega . Happy Birthday meri pyari si cute si bettu❤️  
+            
+            
+          </div>
+
+          <div class="letter-sign">Hamesha Apke ♡</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- STAGE 3: BIRTHDAY PARTY -->
+    <section class="stage party-stage" id="stage4">
+      <div class="party-lights" aria-hidden="true"></div>
+
+      <p class="section-kicker">THE PARTY IS ALL YOURS</p>
+      <h1 class="party-title">
+        HAPPY BIRTHDAY<br>
+        <span>MERI BETTU!</span>
+      </h1>
+      <p class="party-subtitle">Make a wish, birthday girl ✨</p>
+
+      <div class="cake-scene">
+        <div class="cake">
+          <div class="candles" id="candles">
+            <div class="candle"><span class="flame"></span></div>
+            <div class="candle"><span class="flame"></span></div>
+            <div class="candle"><span class="flame"></span></div>
+          </div>
+
+          <div class="cake-top"></div>
+          <div class="cake-layer layer-top"></div>
+          <div class="cake-layer layer-bottom"></div>
+          <div class="cake-icing"></div>
+          <div class="cake-plate"></div>
+        </div>
+      </div>
+
+      <div class="party-actions">
+        <button
+          class="button button-pink italic-bold"
+          id="manualBlow"
+        >
+          Candles bujhao ✨
+        </button>
+      </div>
+
+      <button class="restart-button" id="restart">
+        Surprise phir se dekhein ↻
+      </button>
+    </section>
+  </main>
+
+  <!-- 2-SECOND CENTER NOTE OVER A BLURRED PARTY -->
+  <div class="blow-overlay hidden" id="blowOverlay">
+    <div class="blow-note">
+      Fookiye Bettu 💗
+      <span>Make a wish…</span>
+    </div>
+  </div>
+
+  <div class="toast hidden" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
